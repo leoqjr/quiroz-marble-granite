@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { Resend } from "resend";
 
 export const runtime = "nodejs";
 
@@ -16,6 +17,8 @@ type ContactPayload = {
 function isValidEmail(value: string): boolean {
   return /\S+@\S+\.\S+/.test(value);
 }
+
+const resend = new Resend(process.env.RESEND_API_KEY as string);
 
 export async function POST(request: Request) {
   try {
@@ -55,7 +58,48 @@ export async function POST(request: Request) {
       );
     }
 
-    // Here is where we'll plug in Resend later.
+    if (!process.env.RESEND_API_KEY) {
+      console.error("Missing RESEND_API_KEY");
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "Email is temporarily unavailable. Please try again later or contact us directly.",
+        },
+        { status: 503 },
+      );
+    }
+
+    // Send internal email to you (test mode)
+    const { error } = await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: ["leonardoqjr@gmail.com"],
+      replyTo: email,
+      subject: `New project inquiry from ${name}`,
+      text: [
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Phone: ${phone}`,
+        `City / Area: ${city}`,
+        `Project type: ${projectType}`,
+        `Timeline: ${timeline}`,
+        "",
+        "Message:",
+        message,
+      ].join("\n"),
+    });
+
+    if (error) {
+      console.error("Resend error", error);
+      return NextResponse.json(
+        {
+          success: false,
+          error:
+            "We couldn't send your message right now. Please try again later.",
+        },
+        { status: 500 },
+      );
+    }
 
     return NextResponse.json(
       { success: true, message: "Message received." },
