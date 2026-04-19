@@ -1,12 +1,11 @@
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
 import type { Metadata } from "next";
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Quiroz Marble & Granite",
-  description:
-    "Marble and granite fabrication for homes and light commercial projects in Los Angeles County and Glendale.",
+  description: "Custom stone fabrication in Los Angeles",
 };
 
 export default function RootLayout({

@@ -5,19 +5,22 @@ export function Footer() {
     <footer className="site-footer">
       <div className="site-footer-inner">
         <div>
-          <p className="site-footer-title">Quiroz Marble &amp; Granite</p>
+          <h2 className="site-footer-title">Quiroz Marble &amp; Granite</h2>
           <p className="site-footer-text">
-            Marble and granite fabrication for homes and light commercial
-            projects in Los Angeles County and Glendale.
+            Custom stone fabrication for kitchens, baths, fireplaces, and more
+            across Los Angeles County and Glendale.
           </p>
         </div>
+
+        <div className="site-footer-links">
+          <a href="/services">Services</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/contact">Contact</a>
+        </div>
+
         <div className="site-footer-meta">
-          <p className="site-footer-text">
-            © {new Date().getFullYear()} Quiroz Marble &amp; Granite
-          </p>
-          <p className="site-footer-text">
-            Licensed &amp; insured · Los Angeles, CA
-          </p>
+          <span>© {new Date().getFullYear()} Quiroz Marble &amp; Granite</span>
+          <span>Los Angeles, California</span>
         </div>
       </div>
     </footer>
