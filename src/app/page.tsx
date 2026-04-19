@@ -23,9 +23,7 @@ export default function HomePage() {
             </div>
 
             <p className="hero-lead">
-              Custom countertops and stonework for kitchens, baths, and
-              fireplaces, crafted in‑house and installed across LA County and
-              Glendale.
+              Custom countertops and stonework across LA County and Glendale.
             </p>
 
             <div className="hero-actions">
