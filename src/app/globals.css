@@ -327,9 +327,9 @@ a {
   max-width: var(--qm-max-width);
   margin: 0 auto;
   padding: 4rem 1.5rem 3.5rem;
-  display: flex;
-  align-items: center;
   min-height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-content {
@@ -433,19 +433,18 @@ a {
   color: rgba(249, 250, 251, 0.7);
 }
 
-/* Hero scroll cue (optional) */
+/* Hero scroll cue */
 
 .hero-scroll {
-  position: absolute;
-  left: 1.5rem;
-  bottom: 1.75rem;
-  display: flex;
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.75rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: rgba(249, 250, 251, 0.7);
+  margin-top: 1.75rem; /* distance from buttons */
 }
 
 .hero-scroll-line {
@@ -988,6 +987,9 @@ a {
   font-size: 0.94rem;
   color: var(--qm-muted-text);
 }
+
+/* Shared hover micro-interactions */
+
 /* Base card-like elements */
 .services-item,
 .selected-item,
