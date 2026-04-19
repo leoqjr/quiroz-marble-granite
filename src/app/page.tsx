@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "../components/Reveal";
 
 export default function HomePage() {
@@ -54,6 +55,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
       {/* Who we serve */}
       <Reveal className="section">
         <div className="section-inner who">
@@ -137,7 +139,7 @@ export default function HomePage() {
 
             <article className="process-step">
               <div className="process-step-number">2</div>
-              <h3>Choose stone & lock pricing</h3>
+              <h3>Choose stone &amp; lock pricing</h3>
               <p>
                 Select slabs from our partners or a local yard. We prepare a
                 clear estimate based on your layout and edges.
@@ -155,7 +157,7 @@ export default function HomePage() {
 
             <article className="process-step">
               <div className="process-step-number">4</div>
-              <h3>Install day & care handoff</h3>
+              <h3>Install day &amp; care handoff</h3>
               <p>
                 Our crew installs, levels, and seals as needed, then walks you
                 through caring for the stone you chose.
@@ -171,32 +173,56 @@ export default function HomePage() {
           <div className="selected-header">
             <h2>Selected work</h2>
             <p className="selected-lead">
-              A few recent projects from kitchens, baths, and showrooms.
+              A few recent projects from kitchens, baths, and outdoor spaces.
             </p>
           </div>
 
           <div className="selected-grid">
             <article className="selected-item">
-              <div className="selected-image-frame" />
+              <div className="selected-image-frame">
+                <Image
+                  src="/selected-kitchen.jpg"
+                  alt="Marble and quartz countertops in a family kitchen"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
               <header className="selected-item-header">
                 <h3>Family kitchen</h3>
-                <p className="selected-meta">Marble island · Waterfall edges</p>
+                <p className="selected-meta">Marble island · waterfall edges</p>
               </header>
             </article>
 
             <article className="selected-item">
-              <div className="selected-image-frame" />
+              <div className="selected-image-frame">
+                <Image
+                  src="/selected-bath.jpg"
+                  alt="Stone vanity top and tub surround in a primary bathroom"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
               <header className="selected-item-header">
                 <h3>Bath suite</h3>
-                <p className="selected-meta">Vanity &amp; shower surround</p>
+                <p className="selected-meta">Vanity top · shower surround</p>
               </header>
             </article>
 
             <article className="selected-item">
-              <div className="selected-image-frame" />
+              <div className="selected-image-frame">
+                <Image
+                  src="/selected-outdoor.jpg"
+                  alt="Stone outdoor kitchen countertop with built-in grill"
+                  fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
               <header className="selected-item-header">
-                <h3>Showroom feature</h3>
-                <p className="selected-meta">Display slab · Designer partner</p>
+                <h3>Outdoor kitchen</h3>
+                <p className="selected-meta">Granite tops · BBQ surround</p>
               </header>
             </article>
           </div>

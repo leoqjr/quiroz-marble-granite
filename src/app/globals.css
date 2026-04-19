@@ -762,6 +762,7 @@ a {
 }
 
 .selected-image-frame {
+  position: relative; /* required for next/image fill */
   border-radius: 0.65rem;
   border: 1px solid rgba(209, 213, 219, 0.9);
   background: linear-gradient(
@@ -769,8 +770,9 @@ a {
     rgba(15, 23, 42, 0.06),
     rgba(15, 23, 42, 0.02)
   );
-  aspect-ratio: 3 / 2; /* was 4 / 3 */
+  aspect-ratio: 3 / 2;
   margin-bottom: 0.6rem;
+  overflow: hidden; /* clean crop */
 }
 
 .selected-item-header {
