@@ -45,27 +45,17 @@ export default function HomePage() {
         <div className="trust-strip-inner">
           <div className="trust-item">
             <span className="trust-label">Craftsmanship</span>
-            <span className="trust-value">
-              Tight seams, clean lines, honest details
-            </span>
           </div>
 
           <div className="trust-item">
-            <span className="trust-label">Service</span>
-            <span className="trust-value">
-              Clear communication from template to install
-            </span>
+            <span className="trust-label">Reliability</span>
           </div>
 
           <div className="trust-item">
-            <span className="trust-label">Flexibility</span>
-            <span className="trust-value">
-              From single vanities to full kitchens and multi‑unit projects
-            </span>
+            <span className="trust-label">Care</span>
           </div>
         </div>
       </section>
-
       {/* Who we serve */}
       <Reveal className="section">
         <div className="section-inner who">
