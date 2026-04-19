@@ -70,7 +70,7 @@ export default function HomePage() {
             <article className="who-item">
               <div className="who-tag">Homeowners</div>
               <h3>Remodels and new builds</h3>
-              <p>Durable stone that still feels tailored to your home.</p>
+              <p>Durable, tailored stone for your home.</p>
               <ul>
                 <li>Kitchen and bath countertops</li>
                 <li>Fireplaces and feature walls</li>
@@ -81,20 +81,18 @@ export default function HomePage() {
             <article className="who-item">
               <div className="who-tag">Designers &amp; architects</div>
               <h3>Detail‑driven projects</h3>
-              <p>
-                A fabricator that respects drawings, sightlines, and timelines.
-              </p>
+              <p>A fabricator that respects your plans.</p>
               <ul>
                 <li>Material and edge profile guidance</li>
                 <li>Field measurements and shop drawings</li>
-                <li>Consistent finishes across multiple spaces</li>
+                <li>Consistent finishes across spaces</li>
               </ul>
             </article>
 
             <article className="who-item">
               <div className="who-tag">Contractors &amp; builders</div>
               <h3>Reliable trade partner</h3>
-              <p>A stone team you can plug into your schedule.</p>
+              <p>A stone team that fits your schedule.</p>
               <ul>
                 <li>Coordinated installs with other trades</li>
                 <li>Fast‑turn countertop replacements</li>
