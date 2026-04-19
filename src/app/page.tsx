@@ -213,7 +213,7 @@ export default function HomePage() {
       </Reveal>
 
       {/* Quick CTA to About / Contact */}
-      <Reveal className="section">
+      <Reveal className="section section-muted">
         <div className="section-inner">
           <div className="selected-header">
             <p className="who-kicker">Next steps</p>
@@ -225,7 +225,7 @@ export default function HomePage() {
           </div>
 
           <div className="section-grid">
-            <a href="/about" className="card">
+            <a href="/about" className="card card-clickable">
               <h3>Our process &amp; story</h3>
               <p>
                 See how we go from first conversation to finished stone, and
@@ -233,7 +233,7 @@ export default function HomePage() {
               </p>
             </a>
 
-            <a href="/contact" className="card">
+            <a href="/contact" className="card card-clickable">
               <h3>Get a free quote</h3>
               <p>
                 Share a few details about your project and we’ll respond with a

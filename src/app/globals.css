@@ -988,26 +988,36 @@ a {
   font-size: 0.94rem;
   color: var(--qm-muted-text);
 }
-
-/* Shared hover micro-interactions */
-
+/* Base card-like elements */
 .services-item,
 .selected-item,
 .card,
 .who-item,
 .process-step {
   transition:
-    transform 180ms ease-out,
-    box-shadow 180ms ease-out,
-    border-color 180ms ease-out,
-    background-color 180ms ease-out;
+    transform 160ms ease-out,
+    box-shadow 160ms ease-out,
+    border-color 160ms ease-out,
+    background-color 160ms ease-out;
 }
 
+/* Gentle hover for non-clickable informational cards */
 .services-item:hover,
 .selected-item:hover,
-.card:hover,
 .who-item:hover,
 .process-step:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+  border-color: rgba(209, 213, 219, 0.95);
+  background-color: #ffffff;
+}
+
+/* Stronger hover only for truly clickable cards */
+.card-clickable {
+  cursor: pointer;
+}
+
+.card-clickable:hover {
   transform: translateY(-3px);
   box-shadow:
     0 10px 25px rgba(15, 23, 42, 0.1),
