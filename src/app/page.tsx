@@ -10,11 +10,11 @@ export default function HomePage() {
         <div className="hero-overlay" />
         <div className="hero-inner">
           <div className="hero-content">
-            <p className="hero-kicker">Los Angeles · Family‑owned</p>
+            <p className="hero-kicker">Family-owned in Los Angeles</p>
 
             <div className="hero-title-row">
               <div className="hero-title-accent">
-                <span>Stone fabrication</span>
+                <span>Marble &amp; granite fabrication</span>
               </div>
               <h1>
                 Marble &amp; granite
@@ -24,17 +24,28 @@ export default function HomePage() {
             </div>
 
             <p className="hero-lead">
-              Custom countertops and stonework across LA County and Glendale.
+              Custom countertops and stonework crafted with care across LA
+              County and Glendale.
             </p>
 
             <div className="hero-actions">
               <a href="/contact" className="btn-primary">
-                Book a free estimate
+                Get a free quote
               </a>
               <a href="#selected-work" className="btn-secondary hero-secondary">
-                View recent work
+                View our work
               </a>
             </div>
+
+            <div className="hero-meta-sub">
+              Kitchens, baths, fireplaces, and outdoor spaces in one clear
+              process.
+            </div>
+          </div>
+
+          <div className="hero-scroll">
+            <span className="hero-scroll-line" />
+            <span>Scroll</span>
           </div>
         </div>
       </section>
