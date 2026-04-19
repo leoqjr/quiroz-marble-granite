@@ -622,6 +622,16 @@ a {
   background-color: #e1e4ea; /* slightly cooler, more contrast */
 }
 
+.section-process {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-process {
+    margin-bottom: 1rem;
+  }
+}
+
 /* Who we serve */
 
 .who {

@@ -114,7 +114,7 @@ export default function HomePage() {
       </Reveal>
 
       {/* Our process */}
-      <Reveal className="section section-muted">
+      <Reveal className="section section-muted section-process">
         <div className="section-inner process">
           <div className="process-header">
             <p className="process-kicker">Our process</p>
@@ -131,7 +131,7 @@ export default function HomePage() {
               <h3>Start with a quick share</h3>
               <p>
                 Send plans, a sketch, or photos with basic measurements. We
-                clarify your goals, material options, and timing.
+                confirm your goals, materials, and timing.
               </p>
             </article>
 
@@ -139,8 +139,8 @@ export default function HomePage() {
               <div className="process-step-number">2</div>
               <h3>Choose stone & lock pricing</h3>
               <p>
-                Select slabs from our partners or a local yard. We then prepare
-                a detailed estimate based on your layout and edges.
+                Select slabs from our partners or a local yard. We prepare a
+                clear estimate based on your layout and edges.
               </p>
             </article>
 
@@ -149,7 +149,7 @@ export default function HomePage() {
               <h3>Template, cut, and finish in‑house</h3>
               <p>
                 We template on site, then cut, shape, and polish in our shop so
-                seams, overhangs, and details match the approved plan.
+                seams and details match the plan.
               </p>
             </article>
 
@@ -157,8 +157,8 @@ export default function HomePage() {
               <div className="process-step-number">4</div>
               <h3>Install day & care handoff</h3>
               <p>
-                Our crew installs, levels, and seals where needed, then walks
-                you through how to care for the specific stone you chose.
+                Our crew installs, levels, and seals as needed, then walks you
+                through caring for the stone you chose.
               </p>
             </article>
           </div>
