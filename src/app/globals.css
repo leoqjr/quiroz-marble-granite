@@ -296,6 +296,7 @@ a {
   overflow: hidden;
   color: #f9fafb;
   min-height: 80vh; /* taller hero */
+  background-color: #f9fafb; /* match trust strip so no beige shows */
 }
 
 .hero-media {
