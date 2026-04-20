@@ -723,6 +723,11 @@ a {
 
 /* Selected work */
 
+/* Nudge Selected work up to close tiny gap under trust strip */
+.section.section-muted .selected {
+  margin-top: -2px;
+}
+
 .selected {
   display: flex;
   flex-direction: column;
