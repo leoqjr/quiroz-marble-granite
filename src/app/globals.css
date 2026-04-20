@@ -488,6 +488,14 @@ a {
   padding: 0.85rem 1.5rem;
   display: grid;
   gap: 0.75rem;
+  justify-items: center; /* center each item’s content */
+  text-align: center; /* center the text inside */
+}
+
+@media (min-width: 768px) {
+  .trust-strip-inner {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .trust-item {
@@ -1014,9 +1022,16 @@ a {
   background-color: #ffffff;
 }
 
-/* Stronger hover only for truly clickable cards */
+/* Stronger, more “button-like” treatment for clickable Next steps cards */
 .card-clickable {
   cursor: pointer;
+  border-style: solid; /* just makes sure border is treated consistently */
+}
+
+.card-clickable h3 {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
 }
 
 .card-clickable:hover {
@@ -1151,15 +1166,16 @@ a {
 
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(80px) scale(0.95);
+  transform: translateY(20px); /* much smaller movement */
   transition:
-    opacity 600ms ease-out,
-    transform 600ms ease-out;
+    opacity 400ms ease-out,
+    transform 400ms ease-out;
+  will-change: opacity, transform;
 }
 
 .reveal-on-scroll-visible {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
 /* Responsive */
@@ -1233,6 +1249,15 @@ a {
   .hero-inner {
     padding: 3rem 1.5rem 2.75rem;
     min-height: 0;
+  }
+
+  @media (max-width: 640px) {
+    .reveal-on-scroll {
+      transform: translateY(12px);
+      transition:
+        opacity 350ms ease-out,
+        transform 350ms ease-out;
+    }
   }
 
   .hero-content h1 {
