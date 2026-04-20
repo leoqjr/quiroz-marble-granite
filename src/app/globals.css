@@ -296,7 +296,7 @@ a {
   overflow: hidden;
   color: #f9fafb;
   min-height: 80vh;
-  background-color: #f9fafb; /* match trust strip */
+  background-color: #ebeef3; /* match trust strip + section-muted */
 }
 .hero-media {
   position: absolute;
@@ -478,7 +478,7 @@ a {
 /* Trust strip / Values strip */
 
 .trust-strip {
-  background-color: #f9fafb;
+  background-color: #ebeef3; /* match section-muted to avoid visible seam */
   border-bottom: 1px solid rgba(209, 213, 219, 0.9);
   margin: 0;
 }
