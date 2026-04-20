@@ -613,7 +613,7 @@ a {
 }
 
 .trust-strip + .section.section-muted {
-  margin-top: -3px; /* adjust to -2px or -4px if needed */
+  margin-top: -4px; /* adjust to -2px or -4px if needed */
 }
 
 .section-process {
