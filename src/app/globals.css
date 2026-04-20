@@ -1256,6 +1256,11 @@ a {
     min-height: 0;
   }
 
+  /* Tighten gap between trust strip and Selected work on mobile */
+  .trust-strip + .section.section-muted {
+    padding-top: 2.4rem; /* was 3rem globally */
+  }
+
   @media (max-width: 640px) {
     .reveal-on-scroll {
       transform: translateY(12px);
