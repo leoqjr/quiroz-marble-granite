@@ -295,8 +295,8 @@ a {
   position: relative;
   overflow: hidden;
   color: #f9fafb;
-  min-height: 80vh;
-  background-color: #ebeef3; /* match trust strip + section-muted */
+  min-height: 80vh; /* taller hero */
+  background-color: #f5f2eb; /* your beige page bg, or remove this line if you didn't have it */
 }
 .hero-media {
   position: absolute;
@@ -478,10 +478,11 @@ a {
 /* Trust strip / Values strip */
 
 .trust-strip {
-  background-color: #ebeef3; /* match section-muted to avoid visible seam */
+  background-color: #f9fafb; /* lighter than main bg for contrast */
   border-bottom: 1px solid rgba(209, 213, 219, 0.9);
   margin: 0;
 }
+
 .trust-strip-inner {
   max-width: var(--qm-max-width);
   margin: 0 auto;
@@ -612,9 +613,10 @@ a {
   border-top: 1px solid rgba(148, 163, 184, 0.4);
 }
 
-/* Remove top border only for the first muted section under trust strip */
+/* Remove top border + extra space only for the first muted section under trust strip */
 .trust-strip + .section.section-muted {
   border-top: none;
+  padding-top: 2.8rem; /* slightly less than the global 3rem */
 }
 
 .trust-strip + .section.section-muted {
@@ -1258,11 +1260,6 @@ a {
   .hero-inner {
     padding: 3rem 1.5rem 2.75rem;
     min-height: 0;
-  }
-
-  /* Tighten gap between trust strip and Selected work on mobile */
-  .trust-strip + .section.section-muted {
-    padding-top: 2.4rem; /* was 3rem globally */
   }
 
   @media (max-width: 640px) {
