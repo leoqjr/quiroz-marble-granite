@@ -295,10 +295,9 @@ a {
   position: relative;
   overflow: hidden;
   color: #f9fafb;
-  min-height: 80vh; /* taller hero */
-  background-color: #f9fafb; /* match trust strip so no beige shows */
+  min-height: 80vh;
+  background-color: #f9fafb; /* match trust strip */
 }
-
 .hero-media {
   position: absolute;
   inset: 0;
@@ -479,7 +478,7 @@ a {
 /* Trust strip / Values strip */
 
 .trust-strip {
-  background-color: #f9fafb; /* lighter than main bg for contrast */
+  background-color: #f9fafb;
   border-bottom: 1px solid rgba(209, 213, 219, 0.9);
   margin: 0;
 }
@@ -611,6 +610,11 @@ a {
 .section-muted {
   background-color: #ebeef3; /* slightly softer, still cool contrast */
   border-top: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+/* Remove top border only for the first muted section under trust strip */
+.trust-strip + .section.section-muted {
+  border-top: none;
 }
 
 .trust-strip + .section.section-muted {
