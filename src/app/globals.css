@@ -1175,10 +1175,10 @@ a {
 
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(10px); /* was 20px */
   transition:
-    opacity 400ms ease-out,
-    transform 400ms ease-out;
+    opacity 300ms ease-out,
+    /* shorter */ transform 300ms ease-out;
   will-change: opacity, transform;
 }
 
@@ -1261,10 +1261,10 @@ a {
   }
 
   .reveal-on-scroll {
-    transform: translateY(12px);
+    transform: translateY(6px);
     transition:
-      opacity 350ms ease-out,
-      transform 350ms ease-out;
+      opacity 260ms ease-out,
+      transform 260ms ease-out;
   }
 
   .hero-content h1 {
