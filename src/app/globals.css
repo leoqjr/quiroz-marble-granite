@@ -296,8 +296,8 @@ a {
   overflow: hidden;
   color: #f9fafb;
   min-height: 80vh; /* taller hero */
-  background-color: #f5f2eb; /* your beige page bg, or remove this line if you didn't have it */
 }
+
 .hero-media {
   position: absolute;
   inset: 0;
@@ -613,14 +613,11 @@ a {
   border-top: 1px solid rgba(148, 163, 184, 0.4);
 }
 
-/* Remove top border + extra space only for the first muted section under trust strip */
+/* Seam fix: adjust only the first muted section under trust strip */
 .trust-strip + .section.section-muted {
   border-top: none;
-  padding-top: 2.8rem; /* slightly less than the global 3rem */
-}
-
-.trust-strip + .section.section-muted {
-  margin-top: -4px; /* adjust to -2px or -4px if needed */
+  margin-top: 0;
+  padding-top: 3rem;
 }
 
 .section-process {
@@ -1036,7 +1033,7 @@ a {
 /* Stronger, more “button-like” treatment for clickable Next steps cards */
 .card-clickable {
   cursor: pointer;
-  border-style: solid; /* just makes sure border is treated consistently */
+  border-style: solid;
 }
 
 .card-clickable h3 {
@@ -1177,7 +1174,7 @@ a {
 
 .reveal-on-scroll {
   opacity: 0;
-  transform: translateY(20px); /* much smaller movement */
+  transform: translateY(20px);
   transition:
     opacity 400ms ease-out,
     transform 400ms ease-out;
@@ -1262,13 +1259,11 @@ a {
     min-height: 0;
   }
 
-  @media (max-width: 640px) {
-    .reveal-on-scroll {
-      transform: translateY(12px);
-      transition:
-        opacity 350ms ease-out,
-        transform 350ms ease-out;
-    }
+  .reveal-on-scroll {
+    transform: translateY(12px);
+    transition:
+      opacity 350ms ease-out,
+      transform 350ms ease-out;
   }
 
   .hero-content h1 {
